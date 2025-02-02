@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jquery Animate</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+        	.box{width:100px; height: 100px; position: relative;
+        	 left:400px}
+        </style>
+        <script src='jquery-3.7.1.min.js'></script>
+        <script>
+           $(document).ready(function (){
+           	$('input').focus(function(){
+           		$('h1').text('On Focus')
+           	})
+           	$('input').blur(function(){
+           		$('h1').text('On Blur')
+           	})
+           	$('input').change(function(){
+           		$('h1').text('On Change')
+           	})
+           	$('input').select(function(){
+           		$('h1').text('On Select')
+           	})
+            })
+		</script>
+</head>
+<body>
+<div class="container">
+<div class="w75">
+<input type="text" name="" placeholder="Type Text Here ...">
+<h1></h1>
+</div> 
+</div>
+</body>
+</html>

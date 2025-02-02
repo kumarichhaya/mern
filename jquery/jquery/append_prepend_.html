@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jquery Basic Syntax</title>
+        <link rel="stylesheet" href="style.css">
+        <script src='jquery-3.7.1.min.js'></script>
+        <script>
+           $(document).ready(function (){
+                $('#texta').click(function(){
+                    v=$('input').val()
+                    $('#text').after(v);
+                })
+                $('#textb').click(function(){
+                    v=$('input').val()
+                    $('#text').before(v);
+                })
+                $('#textap').click(function(){
+                    v=$('input').val()
+                    $('#text').append(v);
+                })
+                $('#textp').click(function(){
+                    v=$('input').val()
+                    $('#text').prepend(v);
+                })
+                $('#lista').click(function(){
+                    v=$('input').val()
+                    $('ol').append("<li>"+v+"</li>");
+                })
+                $('#listp').click(function(){
+                    v=$('input').val()
+                    $('ol').prepend("<li>"+v+"</li>");
+                })
+                $('#emptyl').click(function(){
+                    $('ol').empty();
+                })
+                $('#emptyp').click(function(){
+                    $('p').empty();
+                })
+                $('#removet').click(function(){
+                    $('h2').remove();
+                })
+            })
+        </script>
+    </head>
+    <body>
+<div class="container">
+<div class="w75">
+<h2>Write Text</h2>
+<input type="text" placeholder="Enter Text"> 
+<button id='texta'>After</button>
+<button id='textb'>Before</button>
+<button id='textap'>Append</button>
+<button id='textp'>Prepend</button>
+<button id='lista'>Append List</button>
+<button id='listp'>Prepend List</button>
+<button id='emptyl'>Empty List</button>
+<button id='emptyp'>Empty Para</button>
+<button id='removet'>Remove Title</button>
+<div> 
+<p id='text'>Text</p>
+<ol>
+    <li>List Item 1</li>
+</ol>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<link rel="stylesheet" href="style.css">
+<script src='jquery-3.7.1.min.js'></script>
+<script>
+$(document).ready(function (){
+$('input').change(function(){    
+var w=parseFloat($('#w').val())
+var h=parseFloat($('#h').val())
+var bmi=(w/(h*h));
+$('#bmi').text(bmi.toPrecision(4));
+if(bmi<18.5)
+$('res').text("underweight").css({'backgroundColor':'gold'})
+else if(bmi<30)
+$('res').text("normal").css({'backgroundColor':'green'});
+else if(bmi<40)
+$('res').text("overweight").css({'backgroundColor':'orange'});
+else
+$('res').text("obese").css({'backgroundColor':'red'});
+})
+})
+</script>
+</head>
+<body>
+<main class="container">
+    <div class="w75 ">
+    <h1 class="text-center">Calculate BMI</h1> <hr>
+    <p>Weight (in kg)</p>
+    <input type="text" id="w"  value="75" >
+    <p>Height (in m)</p>
+    <input type="text" id="h"  value="1.75">
+    </div>
+    <br>
+    <div class="w75  theme1 text-center">
+    <h3>BMI - <span id="bmi">24.5</span></h3>
+    <p id="res" style="font-weight: bold;"></p> 
+    </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+</head>
+<body class="bg-success-subtle">
+    <section class="text-center" style="background-image: url('./images/bg-image.jpg'); background-size: cover; background-position: 100%;">
+        <div class="py-5 text-white" style="background-color: rgba(67,140,133,0.7);">
+            <p class="display-6 fw-bold mt-5">Search Images and Videos</p>
+                <form>
+                    <div class="input-group w-75 m-auto mb-5 py-4">
+                        <input type="" name="" class="fs-6 form-control" placeholder="Enter keyword to search" id="query">
+                        <button class="btn btn-dark" onclick="srchImg(event)">Images</button>
+                        <button class="btn btn-dark" onclick="srchvId(event)">Videos</button>
+                    </div>
+                </form>
+        </div>
+    </section>
+    <main class="container">
+        <div class="row py-5" id="result">
+        </div>
+    </main>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+</body>
+</html>

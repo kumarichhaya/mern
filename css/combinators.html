@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Card</title>
+  <style>
+    /* Descendant Combinator (Space) */
+.recipe-card h1 {
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Child Combinator (>) */
+.recipe-card > p {
+  color: #555;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Adjacent Sibling Combinator (+) */
+h1 + p {
+  margin-top: -10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+/* General Sibling Combinator (~) */
+h2 ~ ul, h2 ~ ol {
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+/* Styling the button */
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e55337;
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="recipe-card">
+    <h1>Spaghetti Bolognese</h1>
+    <p>This classic Italian pasta dish is rich and hearty!</p>
+
+    <h2>Ingredients</h2>
+    <ul>
+      <li>Spaghetti</li>
+      <li>Ground Beef</li>
+      <li>Tomato Sauce</li>
+      <li>Onion</li>
+      <li>Garlic</li>
+    </ul>
+
+    <h2>Steps</h2>
+    <ol>
+      <li>Boil the pasta.</li>
+      <li>Cook the beef.</li>
+      <li>Add the sauce and seasonings.</li>
+      <li>Simmer for 20 minutes.</li>
+      <li>Serve and enjoy!</li>
+    </ol>
+
+    <button>Start Cooking</button>
+  </div>
+
+</body>
+</html>

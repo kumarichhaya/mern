@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global vs Custom Attributes</title>
+</head>
+<body>
+    <h1 id="main-title" class="header" style="color: blue;">Global vs Custom Attributes</h1>
+
+    <!-- Global Attributes -->
+    <p id="para1" class="text" title="This is a global attribute example.">
+        This paragraph uses a global attribute: "title".
+    </p>
+
+    <!-- Custom Attribute -->
+    <div data-info="This is a custom attribute" style="border: 1px solid black; padding: 10px;">
+        This div uses a custom attribute: "data-info".
+    </div>
+
+    <script>
+        // Accessing the custom attribute using JavaScript
+        const divElement = document.querySelector('div');
+        console.log(divElement.getAttribute('data-info')); // Output: This is a custom attribute
+    </script>
+</body>
+</html>

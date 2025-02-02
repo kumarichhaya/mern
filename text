@@ -1,0 +1,29 @@
+jquery
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+methods-> 
+
+toggle
+hide/show
+fadeIn/fadeOut/fadeToggle
+SlideDown/SlideUp/slideTogggle
+
+Events
+click	
+keypress	
+dblclick	
+keydown	
+mouseenter
+keyup
+focus
+mouseleave
+
+
+<!-- React Requirementa -->
+npm create vite@latest
+Project name: ... card-project
+cd card-project
+npm install
+npm i bootstrap@5.3.3
+npm run dev
+Banner 
+Card

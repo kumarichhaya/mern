@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding:0 1.6rem;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(236, 230, 242);
+    scroll-behavior: smooth;
+
+}
+.padding{
+    padding: 20px 20px;
+}
+h1{
+    font-size:42px;
+    font-weight: 500;
+}
+h2{
+    font-size: 32px;
+    font-weight: 500;
+}
+.text-size{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* media Query */
+@media screen and (min-width: 780px) {
+    body{
+        background-color: rgb(251, 239, 251);
+    }
+    h1{
+        font-size:44px;
+    }
+    h2{
+        font-size: 34px;
+    }
+  }

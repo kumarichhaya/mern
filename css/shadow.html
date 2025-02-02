@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: content-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: #191717;
+            display: grid;
+            place-items: center;
+        }
+        .shadow{
+            width: 300px;
+            height: 300px;
+            padding: 40px;
+            background-color: rgb(45, 44, 44);
+            border-radius: 50%;
+            box-shadow: 0 0 60px 60px #ffb000;  
+            transition:3s all; 
+            }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="shadow"> </div>
+    </section>
+</body>
+</html>

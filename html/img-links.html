@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Link Target Examples</title>
+</head>
+<body>
+  <h1>Link Target Attribute Examples</h1>
+
+  <!-- Default (_self): Opens in the same window/tab -->
+  <a href="https://www.example.com" target="_self">Open in Same Window (Default)</a><br><br>
+
+  <!-- _blank: Opens in a new window/tab -->
+  <a href="https://www.example.com" target="_blank">Open in New Tab</a><br><br>
+
+  <!-- _parent: Opens in the parent frame -->
+  <!-- This works only if the page is inside an iframe -->
+  <iframe src="iframe-example.html" style="width: 300px; height: 200px; border: 1px solid #ccc;"></iframe><br>
+  <a href="https://www.example.com" target="_parent">Open in Parent Frame</a><br><br>
+
+  <!-- _top: Opens in the full window, breaking out of frames -->
+  <a href="https://www.example.com" target="_top">Open in Full Window</a><br><br>
+</body>
+</html>

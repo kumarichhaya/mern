@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<link rel="stylesheet" href="style.css">
+<script src='jquery-3.7.1.min.js'></script>
+<style type="text/css">
+#r{accent-color: red}   
+#g{accent-color: green;}    
+#b{accent-color: blue}
+#clr{background-color:rgb(164, 219, 160); height:70px }
+</style>
+<script>
+$(document).ready(function (){
+$('input').change(function(){    
+    c="rgb("+$("#r").val()+", "+$("#g").val()+", "+$("#b").val()+")";
+    $("#code").text(c)
+    $("#clr").css({'backgroundColor':c})
+})
+})
+</script>
+</head>
+<body>
+    <main class="container">
+    <div class="w75 p4 ">
+    <h1 class="text-center">RGB COLOR SELECTOR</h1> <hr>
+    <p id="clr" > </p>
+    <h3 class="text-center" id="code">rgb(164, 219, 160)</h3>
+    <input type="range" id="r" min="0" max="255" value="164">
+    <input type="range" id="g" min="0" max="255" value="219">
+    <input type="range" id="b" min="0" max="255" value="160">
+</div>
+</main>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jquery Basic Syntax</title>
+        <link rel="stylesheet" href="style.css">
+        <script src='jquery-3.7.1.min.js'></script>
+        <script>
+           $(document).ready(function (){
+              
+               $('#b0').click(function(){
+                $('#res').text($('#un').val());
+               })
+
+               $('#b1').click(function(){
+                $('#res').css({'color':'darkgreen'});
+               })
+
+               $('#b2').click(function(){
+                if($('#pw').attr('type')=='password')
+                    $('#pw').attr('type','text');
+                else
+                    $('#pw').attr('type','password')
+               })
+               
+            $('#b3').click(function(){
+                k="<b>"+$('#un').val()+"</b>";
+                $('#res').html(k);
+               })
+
+            })
+           // function s(){
+           //  k=document.getElementById('pw').value;
+           //  document.getElementById('res').textContent=k;
+           //  document.getElementById('res').style.color='red';
+           //    }
+        </script>
+    </head>
+    <body>
+<div class="container">
+<div class="w50">
+<p id='res'></p>
+<input type="text" placeholder="user name" id="un"> <br>
+<input type="password" placeholder="password" id='pw'> <br>
+<button id='b0'>B0</button>
+<button id='b1'>B1</button>
+<button id='b2'>B2</button>
+<button id='b3'>B3</button>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Embedding Videos -->
+    <video controls width="600" height="400" poster="poster.jpg">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+      <!--  Media Source -->
+      <video controls>
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.ogg" type="video/ogg">
+        Your browser does not support the video element.
+      </video>
+      <!-- Text Tracks for Media -->
+      <video controls>
+        <source src="video.mp4" type="video/mp4">
+        <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English">
+      </video>
+      <!-- iframe -->
+      <iframe src="https://www.youtube.com/embed/example" width="560" height="315" allowfullscreen></iframe>
+
+      
+</body>
+</html>

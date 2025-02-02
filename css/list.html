@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List in Css</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            background-image:linear-gradient(to bottom, #9aadc3 0%, #5b697a 50%),linear-gradient(to bottom, #fafbfd 0%, #fafbfd 50%);
+            background-size: 100% 50% 100% 50%;
+            background-repeat: no-repeat;
+            display: grid;
+            place-items: center;
+        }
+        ul{
+            list-style-type:disc;
+            list-style-position: inside;
+            /* list-style-image: url(../images/mario.gif); */
+        }
+        li{
+            font-size: 32px;
+            font-weight: 400;
+            text-transform: capitalize;
+            margin-bottom: 16px;
+            border: 2px solid #ed5656;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="lists">
+            <li>Like</li>
+            <li>Share
+                <ul>
+                    <li>Share</li>
+                    <li>Subscribe</li>
+                </ul>
+            </li>
+            <li>Subscribe</li>
+        </ul>
+    </header>
+    <main></main>
+    <footer></footer>
+</body>
+</html>

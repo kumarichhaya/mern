@@ -1,0 +1,19 @@
+:root{--theme1:#ff7675; --theme2:#0984e3; --light:#ffeaa7}
+
+*{line-height: 1.5em; box-sizing: border-box;}
+body{background-color:var(--light); margin: 0px; padding: 0px; }
+a{text-decoration: none; }
+input{width: 100%; padding: 10px;  margin-bottom: 10px}
+button{background-color: var(--theme2); color: white; padding: 10px;}
+img{width: 100%}
+
+.container{width: 70%; background-color: white; margin: auto; padding: 50px;}
+.w50{width: 50%; margin: auto}
+.w75{width: 75%; margin: auto}
+.w100{width: 100%; margin: auto}
+.theme1{background-color: var(--theme1); color: white;}
+.theme2{background-color: var(--theme2); color: white;}
+
+.fwb{font-weight: bold;}
+.fsi{font-style: italic;}
+.text-center{text-align: center;}

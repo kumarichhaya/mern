@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Example</title>
+</head>
+<body>
+
+  <h2>Registration Form</h2>
+  
+  <form action="/submit" method="POST" enctype="multipart/form-data">
+    <!-- Text input for name -->
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required placeholder="Enter your full name"><br><br>
+
+    <!-- Email input -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+
+    <!-- Password input -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required placeholder="Enter your password"><br><br>
+
+    <!-- Number input -->
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="18" max="100" required><br><br>
+
+    <!-- Radio buttons for gender -->
+    <fieldset>
+      <legend>Gender:</legend>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label><br>
+    </fieldset><br>
+
+    <!-- Checkbox for newsletter -->
+    <label for="newsletter">
+      <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+      Subscribe to newsletter
+    </label><br><br>
+
+    <!-- Textarea for bio -->
+    <label for="bio">Short Bio:</label><br>
+    <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Tell us about yourself"></textarea><br><br>
+
+    <!-- Dropdown menu for country -->
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option value="usa">USA</option>
+      <option value="canada">Canada</option>
+      <option value="india">India</option>
+      <option value="australia">Australia</option>
+    </select><br><br>
+
+    <!-- File input for profile picture -->
+    <label for="profile-picture">Profile Picture:</label>
+    <input type="file" id="profile-picture" name="profile-picture"><br><br>
+
+    <!-- Submit button -->
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
