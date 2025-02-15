@@ -1,0 +1,99 @@
+/* Top Banner */
+.top-banner {
+    background-color: var(--banner-color, #eae2f8);
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    padding: 8px 0;
+  }
+  
+  /* Search Bar */
+  .search-container {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 50px;
+    padding: 5px 11px;
+    width: 220px;
+  }
+  
+  .search-bar {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    padding: 8px 11px;
+  }
+  
+  .search-btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px;
+  }
+  
+  /* Logo */
+  .navbar-brand {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Logo Dot Effect */
+  .navbar-brand .dot {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .navbar-brand .dot::after {
+    content: "•";
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    font-size: 18px;
+  }
+  
+  /* Icons */
+  .icons a {
+    color: black;
+    font-size: 18px;
+    margin-left: 15px;
+  }
+  
+  .icons a:hover {
+    color: gray;
+  }
+  
+  /* Navigation Links */
+  .navbar-nav .nav-item .nav-link {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--font-text, black);
+    padding: 8px 20px;
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover {
+    color: gray;
+  }
+  
+  .motto {
+    font-size: 1rem;
+    font-weight: 500; 
+    color: #555;
+    margin-top: -5px; 
+    letter-spacing: 0.5px;
+    text-align: center;
+    display: block;
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 768px) {
+    .icons{
+        gap:19px;
+    }
+  }
+  
