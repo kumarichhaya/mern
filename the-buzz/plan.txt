@@ -1,0 +1,44 @@
+Setup 
+    install
+    components
+Routes 
+Navigation
+Frontend design
+Forms  get - validation
+-----
+Backend
+-----------
+catgeory 
+--------
+Signup Signin 
+forgot reset
+profile password
+-----
+write show del update display single article
+---
+Home 
+---
+Admin
+---
+useContext 
+Login Logout 
+
+
+
+
+
+
+
+done below
+Pages
+    home about blog article Signin Signup Forgotpassword reset  Login 
+user 
+    userlayout add_article article_list edit_article profile password
+admin
+    adminlayout articles users categoryForm catgeories
+
+
+
+    
+
+component  - done

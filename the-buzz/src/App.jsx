@@ -1,16 +1,13 @@
 import Footer from "./component/Footer"
-import About from "./pages/About"
 import Header from "./component/Header"
-import Home from "./pages/Home"
+import { Outlet } from "react-router"
 function App() {
   
 
   return (
     <>
       <Header/>
-      <Home/>
-      <About/>
-      
+      <Outlet />
       <Footer/>
     </>
   )

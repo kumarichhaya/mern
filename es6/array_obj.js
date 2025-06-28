@@ -1,6 +1,6 @@
 students=[
 {
-name:'Navneet',
+name:'chhaya',
 course:['JS','React','Node'],
 doj:{month:'Aug',year:'2024'},
 duration:4.5,
