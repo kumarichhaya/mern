@@ -51,7 +51,7 @@ const SignIn = () => {
   // validation
   return (
     <div className="container py-5">
-      <div class="mb-3 row justify-content-center">
+      <div className="mb-3 row justify-content-center">
         <div className="col-md-5 border border-success p-5 rounded">
           <h4>SignIn !</h4>
           <p>Enter your Account Details</p>
