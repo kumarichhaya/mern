@@ -1,1 +1,2 @@
 # mern
+In this repository, I have documented and added everything I have learned while exploring MERN development. It includes my practice and projects covering the core web technologies like HTML, CSS, Bootstrap, JavaScript, and jQuery, along with modern frameworks and libraries such as React for the frontend. On the backend, I have worked with Node.js and Express.js, and for the database, I have used MongoDB. You will also find complete projects that showcase the integration of these technologies, reflecting my journey and progress in becoming a MERN developer.
